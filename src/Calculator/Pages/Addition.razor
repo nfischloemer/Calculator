@@ -1,0 +1,16 @@
+﻿<div>
+	<button @onclick=Add>+</button>
+	The result is: @Result!
+</div>
+
+@code {
+	[Parameter]
+	public int FirstNumber { get; set; }
+	[Parameter]
+	public int SecondNumber { get; set; }
+	public int Result { get; set; }
+
+	private void Add() {
+		Result = FirstNumber + SecondNumber;
+	}
+}

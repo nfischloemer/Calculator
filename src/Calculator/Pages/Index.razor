@@ -12,18 +12,9 @@
 	Enter your second number:
 	<input @bind=SecondNumber />
 </div>
-<div>
-	<button @onclick=Calculate>Calculate!</button>
-	The Result is: @Result!
-</div>
+<Addition FirstNumber=@FirstNumber SecondNumber=@SecondNumber></Addition>
 
 @code {
 	public int FirstNumber { get; set; }
 	public int SecondNumber { get; set; }
-	public int Result { get; set; }
-
-	public void Calculate() {
-		var random = new Random();
-		Result = random.Next(0, 100);
-	}
 }
