@@ -1,0 +1,29 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello World!</h1>
+<p>Here you can calculate numbers!</p>
+<div>
+	Enter your first number:
+	<input @bind=FirstNumber />
+</div>
+<div>
+	Enter your second number:
+	<input @bind=SecondNumber />
+</div>
+<div>
+	<button @onclick=Calculate>Calculate!</button>
+	The Result is: @Result!
+</div>
+
+@code {
+	public int FirstNumber { get; set; }
+	public int SecondNumber { get; set; }
+	public int Result { get; set; }
+
+	public void Calculate() {
+		var random = new Random();
+		Result = random.Next(0, 100);
+	}
+}
