@@ -1,0 +1,25 @@
+﻿@using Calculator.Services
+
+<div>
+	<button @onclick=Subtract>-</button>
+	<span hidden=@IsLoading>The result is: @Result!</span>
+	<span hidden=@(!IsLoading)>Calculating...</span>
+</div>
+
+@code {
+	[Parameter]
+	public int FirstNumber { get; set; }
+	[Parameter]
+	public int SecondNumber { get; set; }
+	public int Result { get; set; }
+	public bool IsLoading { get; set; }
+
+	[Inject]
+	public ISubtractionService SubtractionService { get; set; }
+
+	private async void Subtract() {
+		IsLoading = true;
+		Result = await SubtractionService.Subtract(FirstNumber, SecondNumber);
+		IsLoading = false;
+	}
+}

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "Calculator\Calculator.csproj", "{06A5CF85-12A5-4900-A37A-E9E59A251D69}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubtractionService", "SubtractionService\SubtractionService.csproj", "{BDB98F21-E695-4C6F-8741-11FE486D5C5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{06A5CF85-12A5-4900-A37A-E9E59A251D69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06A5CF85-12A5-4900-A37A-E9E59A251D69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06A5CF85-12A5-4900-A37A-E9E59A251D69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDB98F21-E695-4C6F-8741-11FE486D5C5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB98F21-E695-4C6F-8741-11FE486D5C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB98F21-E695-4C6F-8741-11FE486D5C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB98F21-E695-4C6F-8741-11FE486D5C5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

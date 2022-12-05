@@ -1,8 +1,13 @@
+using Calculator.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddHttpClient();
+builder.Services.AddSingleton<ISubtractionService, SubtractionService>();
 
 var app = builder.Build();
 
